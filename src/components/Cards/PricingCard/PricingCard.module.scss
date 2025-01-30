@@ -1,0 +1,81 @@
+// PricingCard.module.scss
+
+.cardContainer {
+  border: 2px solid #444;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  background-color: #1a1a1a;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.recommended {
+    border: 2px solid #ffcc00;
+    background-color: #333333;
+    transform: scale(1.1);
+    position: relative;
+
+    &::before {
+      content: 'Recommended';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ffcc00;
+      color: #000;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+  }
+}
+
+.packageName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #e0e0e0;
+}
+
+.packagePrice {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.featureList {
+  margin-bottom: 24px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featureItem {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin-bottom: 8px;
+}
+
+.buyButton {
+  background-color: #333;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #555;
+  }
+
+  &:focus {
+    outline: 2px solid #ffcc00;
+  }
+}

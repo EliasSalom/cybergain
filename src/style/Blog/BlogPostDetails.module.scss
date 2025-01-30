@@ -1,0 +1,32 @@
+.StyledContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .meta-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+.MetaData {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+
+  .date-time {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.ContentSection {
+  margin-top: 20px;
+}

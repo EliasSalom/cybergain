@@ -1,0 +1,16 @@
+
+.carouselContainer {
+  padding: 20px;
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+  
+  }
+
+  // Customize slick arrows or dots if you want to display them
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+}

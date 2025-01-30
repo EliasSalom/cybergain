@@ -1,0 +1,29 @@
+/* PartnerCard.module.scss */
+
+.card {
+    padding: 16px;
+    max-width: 345px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardMedia {
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .cardContent {
+    color: #ccc;
+  }
+  
+  .cardTitle {
+    margin-bottom: 16px;
+  }
+  
+  .cardDescription {
+    color: #ccc;
+  }
+  

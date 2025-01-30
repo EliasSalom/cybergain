@@ -1,0 +1,38 @@
+.card {
+    background-color: #000;
+    border: 2px solid #333;
+    height: 400px;
+    border-radius: 5%;
+
+    .card-content {
+      text-align: center;
+      
+  
+      .icon {
+        margin-bottom: 16px;
+  
+        img {
+          height: 50px;
+        }
+      }
+  
+      .title {
+        margin-bottom: 8px;
+        font-size: 1.50rem;
+        color: #fff;
+      }
+  
+      .description {
+        font-size: 0.875rem;
+        color: #ffffff86;
+        transition: 0.8s;
+      }
+      .description:hover{
+        color: #fff;
+      }
+    }
+  }
+  .card:hover{
+    box-shadow: 0 4px 8px rgba(47, 74, 100, 0.658);
+
+  }

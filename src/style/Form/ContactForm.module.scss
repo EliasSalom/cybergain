@@ -1,0 +1,33 @@
+.container {
+    background-color: #2b2b2b; 
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .inputField {
+    background-color: #3a3a3a;
+    border-radius: 8px;
+  }
+  
+    .MuiInputBase-input {
+        color: #ffffff !important;
+      }
+    
+      .MuiInputBase-input::placeholder {
+        color: #ffffff !important;
+        opacity: 1; 
+      }
+    
+      .MuiInputLabel-root {
+        color: #b0b0b0; 
+      }
+    
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #555;
+      }
+  
+  .submitButton {
+    color: #fff;
+  }
+  

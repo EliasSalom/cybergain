@@ -1,0 +1,28 @@
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.row {
+  border-bottom: 1px solid #555;
+}
+
+.header-cell {
+  padding: 16px;
+  text-align: left;
+  background-color: #333;
+  color: white;
+}
+
+.cell {
+  padding: 16px;
+  text-align: left;
+  background-color: #222;
+  color: #ccc;
+}

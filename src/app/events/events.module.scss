@@ -1,0 +1,27 @@
+.container {
+  color: #fff;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  color: #fff;
+}
+
+.description {
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.eventList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: stretch;
+}

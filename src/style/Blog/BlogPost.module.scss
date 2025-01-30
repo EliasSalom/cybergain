@@ -1,0 +1,82 @@
+.BlogContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  height: 100%;
+  border:0.1px solid #fff;
+
+  .upper{
+    color:#fff;
+    padding :0 20px;
+  }
+
+  
+  .lower{
+    background-color: #eee6e6;
+    padding : 20px;
+
+  }
+}
+
+
+.BlogContent {
+  margin:10px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  flex:1;
+  line-clamp: 3;
+
+}
+
+.BlogTitle {
+  font-weight: bold;
+  padding: 10px 0;
+  white-space: nowrap;     
+  overflow: hidden;        
+  text-overflow: ellipsis;
+}
+
+.CoverImage {
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+
+}
+
+.AuthorSection {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.TagsSection {
+  padding: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.InteractionSection {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f8f5f5;
+}
+
+.LikeButton,
+.CommentButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.CommentSection {
+  border-top: 1px solid #e0e0e0;
+}
+
+.Comment {
+  margin-bottom: 16px;
+}
