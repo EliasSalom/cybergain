@@ -328,19 +328,19 @@ export const missionData:BalloonCardProps[] = [
   {
     title: "MISSION",
     description:
-      "In Our Fast-Changing World, Where Technology Has Seamlessly Integrated Into Our Everyday Activities...",
+      "                CyberGain is a company with a two-pronged mission: to empower individuals with the cybersecurity skills and knowledge needed to excel in their careers, and to secure businesses by helping them develop secure development practices and implement robust cybersecurity solutions.",
       imagePosition:"right"
   },
   {
     title: "VISION",
     description:
-      "Our Vision Is To Be A Global Leader In Cybersecurity Education, Making It Accessible To Everyone...",
+      "To pioneer innovative cybersecurity training and solutions, extending our reach globally to shape the future of digital defense and empower individuals and organizations worldwide to protect themselves in the digital age.",
       imagePosition:"left"
 
   },
   {
     title: "PURPOSE",
-    description: "EDUCATE, EMPOWER, SPREAD AWARENESS AND PROMOTE GLOBAL SECURITY.",
+    description: "Forge cybersecurity warriors, equipped to defend against the latest attacks, ignite awareness across industries, and fortify the digital world, one secure connection at a time.",
     imagePosition:"right"
 
   },

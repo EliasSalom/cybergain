@@ -38,7 +38,7 @@ const About = () => {
         />
         <Box>
           <Box className={styles.missionSection}>
-            <Box justifyContent="space-between" alignItems="center">
+            <Box justifyContent="space-between" alignItems="center" sx={{ marginBottom:"15px", paddingBottom:"20px"}}>
               <Typography variant="h3" gutterBottom sx={{ flex: "1" }}>
                 BUILDING A SAFER FUTURE
               </Typography>
@@ -64,7 +64,7 @@ const About = () => {
 
         <Box className={styles.mapSection}>
           <Typography variant="h4" align="center" gutterBottom>
-            Our Branches
+            Our Branch
           </Typography>
           <DynamicMap />
         </Box>
