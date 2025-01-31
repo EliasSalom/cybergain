@@ -8,7 +8,7 @@ export const ContactUsForm: FC = () => {
     event.preventDefault();
     // Handle form submission logic here
   };
-
+  // todo: change placeholder color
   return (
     <Box
       component="form"
@@ -23,6 +23,7 @@ export const ContactUsForm: FC = () => {
         margin="normal"
         required
         className={styles.inputField}
+        color="primary"
       />
       <TextField
         fullWidth
