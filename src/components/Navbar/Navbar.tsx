@@ -134,32 +134,32 @@ const Navbar: FC = () => {
                 {/*  </Button>*/}
                 {/*</Link>*/}
               </div>
-              {showSignUp && (
-                <Box sx={{ display: "flex", gap: 2 }}>
-                  <a href="https://qa.app.cybergain.io/login">
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background:
-                          "linear-gradient(180deg, #0077c2 -10%, #01499e9c)",
-                      }}
-                    >
-                      SIGN IN
-                    </Button>
-                  </a>
-                  <a href="https://qa.app.cybergain.io/signup">
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background:
-                          "linear-gradient(180deg, #fff -200%, #0b121f)",
-                      }}
-                    >
-                      SIGN UP
-                    </Button>
-                  </a>
-                </Box>
-              )}
+              {/*{showSignUp && (*/}
+              {/*  <Box sx={{ display: "flex", gap: 2 }}>*/}
+              {/*    <a href="https://qa.app.cybergain.io/login">*/}
+              {/*      <Button*/}
+              {/*        variant="contained"*/}
+              {/*        sx={{*/}
+              {/*          background:*/}
+              {/*            "linear-gradient(180deg, #0077c2 -10%, #01499e9c)",*/}
+              {/*        }}*/}
+              {/*      >*/}
+              {/*        SIGN IN*/}
+              {/*      </Button>*/}
+              {/*    </a>*/}
+              {/*    <a href="https://qa.app.cybergain.io/signup">*/}
+              {/*      <Button*/}
+              {/*        variant="contained"*/}
+              {/*        sx={{*/}
+              {/*          background:*/}
+              {/*            "linear-gradient(180deg, #fff -200%, #0b121f)",*/}
+              {/*        }}*/}
+              {/*      >*/}
+              {/*        SIGN UP*/}
+              {/*      </Button>*/}
+              {/*    </a>*/}
+              {/*  </Box>*/}
+              {/*)}*/}
             </div>
           )}
         </Toolbar>

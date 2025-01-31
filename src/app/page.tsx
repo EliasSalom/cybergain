@@ -1,5 +1,4 @@
 import { CyberSecurityLevelCard } from "@/components/Cards/CyberSecurityLevelCard";
-import { PartnerCard } from "@/components/Cards/PartnerCard";
 import { Hero } from "@/components/Hero/Hero";
 import { levels, courses,specialties, partnersLogos } from "@/utils/data/data";
 import { Container, Grid, Typography, Button, Box } from "@mui/material";
@@ -20,9 +19,7 @@ export default function Home() {
     <main>
       <Container className="header-container" >
         <Hero title="True Cyber Security Is Preparing For What's Next, Not What Was Last"
-          description="Enter CyberGain Academy Your Gateway To The Cutting-Edge Realm Of Cybersecurity Training.
-          Immerse In Our Diverse Range Of Hands-On Training Labs And Rich Learning Resources,
-          Designed To Empower Tech Enthusiasts From All Backgrounds To Master The Art Of Cybersecurity And Stay One Step Ahead In This Ever-Evolving Landscape."/>
+          description="CyberGain is a leading provider of cybersecurity solutions and education, empowering individuals, enterprises, and businesses of all sizes to navigate the dynamic tech landscape."/>
     
       </Container>
       <Container sx={{ py: 8 }}>
@@ -57,7 +54,7 @@ export default function Home() {
       </Container>
       <Container sx={{ py: 8, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Typography variant="h4" align="center" gutterBottom>
-          Our Courses
+          Our Training
         </Typography>
         <Grid container spacing={4} sx={{ justifyContent: 'center' }}>
   {courses.map((course, index) => (

@@ -24,7 +24,9 @@ const Carousel: React.FC<CarouselProps> = ({ logos }) => {
       <Slider {...settings}>
         {logos.map((logo, index) => (
           <div key={index} className={styles.slide}>
-            <Image src={logo} alt={`Company logo ${index}`} className={styles.logo} width={175} height={125} objectFit='contain' />
+            <Image src={logo} alt={`Company logo ${index}`} className={styles.logo} style={{
+              imageResolution:"from-image"
+            }} width={175} height={125} objectFit='contain' />
           </div>
         ))}
       </Slider>

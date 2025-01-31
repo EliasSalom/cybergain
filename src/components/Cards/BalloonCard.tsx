@@ -20,9 +20,11 @@ export const BalloonCard: FC<BalloonCardProps> = ({
 
   return (
     <Box className={`balloon-card ${isImageLeft ? 'left' : 'right'}`}>
-      {imageSrc&&  <Image src={imageSrc} alt={title} className="balloon-image" width={300} height={300}/>}
+      {imageSrc&&  <Image src={imageSrc} alt={title} className="balloon-image" style={{  width: "300px",
+        height: "300px",
+        objectFit: "cover"}} width={300} height={300}/>}
       <Box className="text-container">
-        <Typography variant="h5" className="balloon-title">
+        <Typography variant="h5" className="balloon-title" >
           {title}
         </Typography>
         <Typography variant="body1" className="balloon-description">

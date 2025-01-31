@@ -9,6 +9,7 @@ import { BalloonCard } from "@/components/Cards/BalloonCard";
 import { PageHero } from "@/components/Hero/PageHero";
 import Head from "next/head";
 import { getS3URL } from "@/utils/getEnv";
+import shield from "/public/shield.png"
 
 const DynamicMap = dynamic(() => import("@/components/Map/Map"), {
   ssr: false,
@@ -47,14 +48,12 @@ const About = () => {
                 Innovation, And Safeguard Tomorrow's Digital Landscape.
               </Typography>
             </Box>
-            <Box className={styles.imageBox} flex="1">
-              <Image
-                src="/shield-image.png" // Replace with your actual image path
-                alt="Shield Image"
-                layout="fill"
-                objectFit="cover"
-              />
-            </Box>
+            {/*<Box className={styles.imageBox} flex="1">*/}
+            {/*  <Image*/}
+            {/*    src={shield}*/}
+            {/*    alt="Shield Image"*/}
+            {/*  />*/}
+            {/*</Box>*/}
             <Box flex="1" pl={4} display={'flex'} flexDirection={"column"} rowGap={"20px"}>
               {missionData.map((cardsData, index) => (
                 <BalloonCard {...cardsData} />

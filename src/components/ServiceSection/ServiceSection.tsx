@@ -13,7 +13,7 @@ export interface ServiceSectionProps {
 export const ServiceSection: FC<ServiceSectionProps> = ({ id, title, cards,mainImage }) => (
     <a id={id}>
         <Grid xs={12} marginTop="100px" >
-            <Typography variant="h4" align="center">
+            <Typography variant="h4" align="center" >
                 {title}
             </Typography>
            <ul style={{display:"flex",flexDirection:"column",gap:mainImage?'20px':''}}> {cards.map((card, index) => (

@@ -4,9 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
 const branches = [
-  { lat: 19.0760, lng: 72.8777, name: "India" },
-  { lat: 31.7683, lng: 35.2137, name: "Israel" },
-  { lat: 25.276987, lng: 55.296249, name: "Dubai" },
+  { lat: 25.276987, lng: 55.296249, name: "UAE,Dubai" },
 ];
 
 const icon = new L.Icon({

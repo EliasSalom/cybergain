@@ -29,18 +29,18 @@ export const CourseCard: FC<Props> = ({ courseName, description, image, informat
             <Typography className={styles.courseName} component="div" sx={{ color: "#e0e0e0" }}>
               {courseName}
             </Typography>
-            <Typography className={styles.description} variant="body2" sx={{ color: "#b0b0b0" }}>
-              {description}
-            </Typography>
-            <Box className={styles.buttonContainer}>
-              <Button
-                variant="contained"
-                onClick={handleDialogOpen}
-                className={styles.syllabusButton}
-              >
-                Syllabus
-              </Button>
-            </Box>
+            {/*<Typography className={styles.description} variant="body2" sx={{ color: "#b0b0b0" }}>*/}
+            {/*  {description}*/}
+            {/*</Typography>*/}
+            {/*<Box className={styles.buttonContainer}>*/}
+            {/*  <Button*/}
+            {/*    variant="contained"*/}
+            {/*    onClick={handleDialogOpen}*/}
+            {/*    className={styles.syllabusButton}*/}
+            {/*  >*/}
+            {/*    Syllabus*/}
+            {/*  </Button>*/}
+            {/*</Box>*/}
           </Box>
           <Divider className={styles.divider} sx={{ borderColor: "#444" }} />
           <Box>

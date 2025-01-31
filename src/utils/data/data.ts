@@ -61,11 +61,11 @@ export const courses = [
     description: 'Introducing The Blue Team Courses, A Comprehensive Certification Pathway ...',
     image: 'https://public.qa.cybergain.io/website/logos/transparent-BlueTeam.png',
     information: [
-      '• Firewalls (FortiGate) Checkpoint',
       '• Cyber Infrastructure',
-      '• SIEM SOC IR By Using - Splunk & IBMQqradar',
-      '• network forensics',
-      '• python programming'
+      '• SIEM SOC IR',
+      '• Network Security',
+      '• Risk Assessment',
+      '• Cloud Security'
     ]
   },
   {
@@ -76,7 +76,8 @@ export const courses = [
       '• Internal Penetration Testing',
       '• External Penetration Testing',
       '• Active Directory Penetration Testing',
-      '• Python Networking & Hacking',
+      '• Web App & API Penetration Testing',
+      '• Cloud Penetration Testing',
     ]
   },
   {
@@ -84,10 +85,11 @@ export const courses = [
     description: '',
     image: 'https://public.qa.cybergain.io/website/logos/transparent-PurpleTeam.png',
     information: [
-      '• Exploit Development & detection',
+      '• Exploit Development & Detection',
       '• Defensive Security Automation',
       '• Privilege Escalation & Lateral Movement',
-      '• Purple Team Live Cickle',
+      '• Purple Team Life Cycle',
+      '• Initial Intrusion Strategies Emulation & Detection',
     ]
   },
   {
@@ -96,9 +98,10 @@ export const courses = [
     image: 'https://public.qa.cybergain.io/website/logos/transparent-ItTeam.png',
     information: [
       '• Windows Server Management & Domain Services',
-      '• Cloud Computing IAC (Infrastructure as Code) Terraform',    
-      '• AWS fundamentals',
-      '• Network Troubleshooting',
+      '• Cloud Computing IAC (Infrastructure as Code)',
+      '• AWS/Azure Services',
+      '• Firewalls',
+      '• Networking Management',
     ]
   },
 ];
@@ -193,6 +196,42 @@ export const services:ServiceSectionProps[] = [
     ],
   },
   {
+    id: "Offensive-section",
+    title: "Offensive Security - PTaaS",
+    cards: [
+      {
+        title: "Red Teaming",
+        description:
+            "Red teaming pits ethical hackers against an organizations defenses to uncover security weaknesses through simulated real-world attacks.",
+        imagePosition: "left",
+        imageSrc:getS3URL()+'/Services/PTaaS/Red+Teaming.png'
+      },
+      {
+        title: "Internal Infrastructure PT",
+        description:
+            "Internal penetration testing simulates a malicious insider by assessing vulnerabilities within your internal network, including devices, cloud resources, servers, susceptibility to phishing attacks, and how far an attacker could spread once inside.",
+        imagePosition: "right",
+        imageSrc:getS3URL()+'/Services/PTaaS/Internal+Infrastructure+Penetration+Testing.png'
+
+      },
+      {
+        title: "External Infrastructure PT",
+        description:
+            "External penetration testing acts like a hacker on the internet, probing for weaknesses in APIs, websites, DNS, public cloud storage, servers, and any other internet-facing aspects of your system.",
+        imagePosition: "left",
+        imageSrc:getS3URL()+'/Services/PTaaS/External+infrastructure+Penetration+Testing.png'
+      },
+      {
+        title: "Vulnerability Assessment",
+        description:
+            "Vulnerability assessment is the systematic inspection of a computer system to identify, prioritize, and potentially quantify its security",
+        imagePosition: "right",
+        imageSrc:getS3URL()+'/Services/PTaaS/Vulnerability+Assessment.png'
+
+      },
+    ],
+  },
+  {
     id: "devops-section",
     title: "DevOps as a Service - DaaS",
     cards: [
@@ -229,43 +268,43 @@ export const services:ServiceSectionProps[] = [
       },
     ],
   },
-  {
-    id: "development-section",
-    title: "Development as a Service - DEVaaS",
-    cards: [
-      {
-        title: "UI/UX Design",
-        description:
-          "UI/UX design combines the user interface (UI), the look and feel, with the user experience (UX), the user's journey through a product or service, to create a seamless and engaging interaction.",
-        imagePosition: "left",
-        imageSrc:getS3URL()+'/Services/DEVaaS/UIUX Design.png'
-      },
-      {
-        title: "Full-stack development",
-        description:
-          "Full-stack development encompasses both front-end (user interface), back-end (server-side logic and databases), API integrations, security measures, and potentially microservices architecture to build complete web applications.",
-        imagePosition: "right",
-        imageSrc:getS3URL()+'/Services/DEVaaS/Full-stack development.png'
-
-      },
-      {
-        title: "Quality Assurance (QA) testing",
-        description:
-          "Quality Assurance (QA) testing involves a systematic process of evaluating software to identify bugs and security issues and ensure it meets all functional and non-functional requirements.",
-        imagePosition: "left",
-        imageSrc:getS3URL()+'/Services/DEVaaS/Quality Assurance (QA) testing.png'
-
-      },
-      {
-        title: "Maintenance and support",
-        description:
-          "Maintenance and support encompass fixing bugs, analyzing security logs, adding new features, and more to keep software functioning smoothly and securely after its launch.",
-        imagePosition: "right",
-        imageSrc:getS3URL()+'/Services/DEVaaS/Maintenance and support.png'
-
-      },
-    ],
-  },
+  // {
+  //   id: "development-section",
+  //   title: "Development as a Service - DEVaaS",
+  //   cards: [
+  //     {
+  //       title: "UI/UX Design",
+  //       description:
+  //         "UI/UX design combines the user interface (UI), the look and feel, with the user experience (UX), the user's journey through a product or service, to create a seamless and engaging interaction.",
+  //       imagePosition: "left",
+  //       imageSrc:getS3URL()+'/Services/DEVaaS/UIUX Design.png'
+  //     },
+  //     {
+  //       title: "Full-stack development",
+  //       description:
+  //         "Full-stack development encompasses both front-end (user interface), back-end (server-side logic and databases), API integrations, security measures, and potentially microservices architecture to build complete web applications.",
+  //       imagePosition: "right",
+  //       imageSrc:getS3URL()+'/Services/DEVaaS/Full-stack development.png'
+  //
+  //     },
+  //     {
+  //       title: "Quality Assurance (QA) testing",
+  //       description:
+  //         "Quality Assurance (QA) testing involves a systematic process of evaluating software to identify bugs and security issues and ensure it meets all functional and non-functional requirements.",
+  //       imagePosition: "left",
+  //       imageSrc:getS3URL()+'/Services/DEVaaS/Quality Assurance (QA) testing.png'
+  //
+  //     },
+  //     {
+  //       title: "Maintenance and support",
+  //       description:
+  //         "Maintenance and support encompass fixing bugs, analyzing security logs, adding new features, and more to keep software functioning smoothly and securely after its launch.",
+  //       imagePosition: "right",
+  //       imageSrc:getS3URL()+'/Services/DEVaaS/Maintenance and support.png'
+  //
+  //     },
+  //   ],
+  // },
 ];
 
 
@@ -438,26 +477,19 @@ export const eventsData: Event[] = [
   }
 ];
 export const specialties: SpecialtyCardProps[] = [
-  { icon: CodeIcon, title: "Web Design", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-  { icon: TrendingUpIcon, title: "Marketing", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-  { icon: BrushIcon, title: "Graphics", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-  { icon: StorageIcon, title: "Data Analysis", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-  { icon: PhoneIphoneIcon, title: "App Development", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-  { icon: ReceiptIcon, title: "Accounting", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-  { icon: AccountBalanceWalletIcon, title: "Payroll", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-  { icon: LanIcon, title: "Networking", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
+  { icon: CodeIcon, title: "Red Team", description: "Simulating real-world cyberattacks to test an organization’s security defenses." },
+  { icon: TrendingUpIcon, title: "Cloud Security", description: "Protecting cloud environments, data, and applications from cyber threats." },
+  { icon: BrushIcon, title: "Penetration Testing", description: "Identifying security vulnerabilities by ethically hacking systems and networks." },
+  { icon: StorageIcon, title: "Data Security", description: "Safeguarding sensitive data from unauthorized access, corruption, or theft." },
+  { icon: PhoneIphoneIcon, title: "SIEM/SOC-24/7/365", description: "Continuous monitoring and threat detection through a Security Operations Center." },
+  { icon: ReceiptIcon, title: "ITaaS", description: "Delivering IT services and infrastructure as a managed solution for businesses." },
+  { icon: AccountBalanceWalletIcon, title: "DevSecOps", description: "Integrating security into the software development and operations lifecycle." },
+  { icon: LanIcon, title: "Incident Response", description: "Rapidly detecting, containing, and mitigating security breaches." },
 ];
 
 export const employees: IEmployee[] = [
-  { name: 'Ahmad', role: 'IT & Cloud Security Lecturer', image: 'Ahmad - IT & Cloud Security Lecturer.jpg' },
-  { name: 'Ali Zinaty', role: 'CEO', image: 'Ali Zinaty - CEO.webp' },
-  { name: 'Eias', role: 'CTO', image: 'Eias - CTO.jpeg' },
-  { name: 'Elias', role: 'VP R&D', image: 'Elias - VP R&D.jpg' },
-  { name: 'Khalid', role: 'Lab Dev', image: 'Khalid - Lab Dev.jpg' },
-  { name: 'Mazin', role: 'Lab Dev', image: 'Mazin -  Lab Dev.jpg' },
-  { name: 'Najeeb', role: 'Blue Team Leader', image: 'Najeeb - Blue Team Leader.jpg' },
-  { name: 'Taleen', role: 'Lab Dev', image: 'Taleen - Lab Dev.jpg' },
-  { name: 'Yara', role: 'HR', image: 'Yara -HR.jpg' },
-  { name: 'Amer', role: 'Frontend', image: 'Amer - Frontend.jpg' },
+  { name: 'Ali Zinaty', role: 'Co-Founder & CEO', image: 'Ali Zinaty - CEO.webp' },
+  { name: 'Eias Haj Yahya', role: 'Co-Founder & CTO', image: 'Eias - CTO.jpeg' },
+  { name: 'Elias Sallom', role: 'Co-Founder & VP R&D', image: 'Elias - VP R&D.jpg' },
 
 ];
