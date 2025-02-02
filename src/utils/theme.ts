@@ -9,8 +9,28 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 const theme = createTheme({
-  typography: {
-    fontFamily: jetBrainsMono.style.fontFamily,
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundColor: "#f5f5f5",
+          fontFamily: "Arial, sans-serif",
+        },
+        ".container": {
+          padding: "16px",
+          "@media (min-width: 768px)": {
+            padding: "32px",
+          },
+        },
+        ".header": {
+          fontSize: "1.5rem",
+          textAlign: "center",
+          "@media (min-width: 768px)": {
+            fontSize: "2rem",
+          },
+        },
+      },
+    },
   },
 });
 

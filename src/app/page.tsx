@@ -1,7 +1,7 @@
 import { CyberSecurityLevelCard } from "@/components/Cards/CyberSecurityLevelCard";
 import { Hero } from "@/components/Hero/Hero";
 import { levels, courses,specialties, partnersLogos } from "@/utils/data/data";
-import { Container, Grid, Typography, Button, Box } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import { CourseCard } from "@/components/Cards/CourseCard";
 import SpecialtyCard from "@/components/Cards/SpecialtyCard";
 import Carousel from "@/components/Carousel/Carousel";
@@ -17,10 +17,9 @@ export const generateMetadata = () => ({
 export default function Home() {
   return (
     <main>
-      <Container className="header-container" >
+      <Container className="header-container">
         <Hero title="True Cyber Security Is Preparing For What's Next, Not What Was Last"
           description="CyberGain is a leading provider of cybersecurity solutions and education, empowering individuals, enterprises, and businesses of all sizes to navigate the dynamic tech landscape."/>
-    
       </Container>
       <Container sx={{ py: 8 }}>
         <Typography variant="h4" align="center" gutterBottom>
@@ -57,20 +56,18 @@ export default function Home() {
           Our Training
         </Typography>
         <Grid container spacing={4} sx={{ justifyContent: 'center' }}>
-  {courses.map((course, index) => (
-    <Grid item xs={12} sm={6} md={6} lg={6} key={index}>
-      <CourseCard
-        courseName={course.name}
-        description={course.description}
-        image={course.image}
-        information={course.information}
-      />
-    </Grid>
-  ))}
-</Grid>
+          {courses.map((course, index) => (
+            <Grid item xs={12} sm={6} md={6} lg={6} key={index}>
+              <CourseCard
+                courseName={course.name}
+                description={course.description}
+                image={course.image}
+                information={course.information}
+              />
+            </Grid>
+          ))}
+        </Grid>
       </Container>
-
-
     </main>
   );
 }

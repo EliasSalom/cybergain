@@ -11,6 +11,8 @@ import theme from '@/utils/theme';
 
 import { JetBrains_Mono } from "next/font/google";
 import './style.css';
+import {ReactNode} from "react";
+import ResponsiveAppBar from "@/components/Navbar/Navba";
 
 const jetBrainsMono = JetBrains_Mono({
   weight: ['400', '500', '700'],
@@ -26,7 +28,7 @@ const Navbar = dynamic(() => import("@/components/Navbar/Navbar"), {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -41,12 +43,13 @@ export default function RootLayout({
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <title></title>
       </head>
       <body className={jetBrainsMono.className}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <Navbar />
-          <ParticlesBackground />
+          <ResponsiveAppBar />
+          {/*<ParticlesBackground />*/}
           <Container className={'main-container'}> {children} </Container>
           <Footer />
         </ThemeProvider>
