@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import {Box, Container} from "@mui/material";
 import { PageHero } from "@/components/Hero/PageHero";
 import { serviceHeroData, services } from "@/utils/data/data";
 import { ServiceSection } from "@/components/ServiceSection/ServiceSection";
@@ -18,13 +18,13 @@ Our consulting services are designed to meet your specific needs and provide pra
 
 const Services: FC = () => {
   return (
-    <Box >
+    <Container>
       <PageHero {...serviceHeroData} />
 
       {services.map(({ id, title, cards,mainImage }) => (
         <ServiceSection key={id} id={id} title={title} cards={cards} mainImage={mainImage}/>
       ))}
-    </Box>
+    </Container>
   );
 };
 

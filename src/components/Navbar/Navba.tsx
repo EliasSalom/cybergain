@@ -56,8 +56,11 @@ export const ResponsiveAppBar:FC= ()=> {
                 <Toolbar disableGutters>
                     <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
                         <img
-                            src="https://cybergain.net/static/media/logo.4fd359a7a963b12ff51fb8a3e75114e5.svg"
+                            src="https://public.qa.cybergain.io/Company%20Logo/cyber-gain-logo-mini%20(1).png"
                             alt={""}
+                            style={{
+                                width:"60px"
+                            }}
                         />
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -87,8 +90,8 @@ export const ResponsiveAppBar:FC= ()=> {
                             onClose={handleCloseNavMenu}
                             sx={{ display: { xs: 'block', md: 'none' } }}
                         >
-                            {pages.map(({name, path}) => (
-                                <Link href={path} passHref>
+                            {pages.map(({name, path},index) => (
+                                <Link key={index} href={path} passHref>
                                 <MenuItem key={name} onClick={handleCloseNavMenu}>
                                     <Typography sx={{ textAlign: 'center' }}>{name}</Typography>
                                 </MenuItem>
@@ -96,10 +99,13 @@ export const ResponsiveAppBar:FC= ()=> {
                             ))}
                         </Menu>
                     </Box>
-                    <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}>
+                    <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, }}>
                         <img
-                            src="https://cybergain.net/static/media/logo.4fd359a7a963b12ff51fb8a3e75114e5.svg"
+                            src="https://public.qa.cybergain.io/Company%20Logo/cyber-gain-logo-mini%20(1).png"
                             alt={""}
+                            style={{
+                                width:"60px"
+                            }}
                         />
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>

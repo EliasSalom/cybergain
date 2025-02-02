@@ -16,7 +16,7 @@ export const generateMetadata = () => ({
 
 export default function Home() {
   return (
-    <main>
+    <main style={{padding:"4px"}}>
       <Container className="header-container">
         <Hero title="True Cyber Security Is Preparing For What's Next, Not What Was Last"
           description="CyberGain is a leading provider of cybersecurity solutions and education, empowering individuals, enterprises, and businesses of all sizes to navigate the dynamic tech landscape."/>
