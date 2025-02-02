@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import {Box, Grid, Typography} from "@mui/material";
 import { BalloonCard, BalloonCardProps } from "@/components/Cards/BalloonCard";
 import { FC } from "react";
 import Image from "next/image";
@@ -16,19 +16,16 @@ export const ServiceSection: FC<ServiceSectionProps> = ({ id, title, cards,mainI
             <Typography variant="h4" align="center" >
                 {title}
             </Typography>
-           <ul style={{display:"flex",flexDirection:"column",gap:mainImage?'20px':''}}> {cards.map((card, index) => (
-            <li 
-            key={index}
-            >
+           <Box style={{display:"flex",flexDirection:"column",gap:mainImage?'20px':''}}> {cards.map((card, index) => (
                 <BalloonCard
+                    key={index}
                     title={card.title}
                     description={card.description}
                     imageSrc={card.imageSrc || ""}
                     imagePosition={card.imagePosition}
                 />
-                </li>
             ))}
-            </ul>
+            </Box>
                   {mainImage&& <div style={{margin:"0 auto",width:"100%",height:"450px",position:"relative",objectFit:"cover"}}> <Image src={mainImage} alt={title}   fill/></div>}
 
         </Grid>
