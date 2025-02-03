@@ -52,7 +52,7 @@ export const ResponsiveAppBar:FC= ()=> {
 
     return (
         <AppBar position="static" sx={{ background: "black" }}>
-            <Container maxWidth="xl">
+            <Container maxWidth="xl" sx={{zIndex:"1"}}>
                 <Toolbar disableGutters>
                     <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
                         <img
@@ -109,14 +109,14 @@ export const ResponsiveAppBar:FC= ()=> {
                         />
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map(({name}) => (
-                            <Button
+                        {pages.map(({name, path}) => (
+                            <Link
                                 key={name}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                href={path} passHref
                             >
-                                {name}
-                            </Button>
+                                <Typography sx={{ my: 2, color: 'white', display: 'block',marginLeft:"15px", fontSize:"18px" }}>{name}</Typography>
+                            </Link>
                         ))}
                     </Box>
                     <Box sx={{ flexGrow: 0 }}>

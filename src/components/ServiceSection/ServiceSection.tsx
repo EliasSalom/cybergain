@@ -26,7 +26,7 @@ export const ServiceSection: FC<ServiceSectionProps> = ({ id, title, cards,mainI
                 />
             ))}
             </Box>
-                  {mainImage&& <div style={{margin:"0 auto",width:"100%",height:"450px",position:"relative",objectFit:"cover"}}> <Image src={mainImage} alt={title}   fill/></div>}
+                  {mainImage&& <Box sx={{display: { xs: "none", md: "block"}, margin:"0 auto",width:"100%",height:"450px",position:"relative",objectFit:"cover" }}> <Image src={mainImage} alt={title} fill/></Box>}
 
         </Grid>
     </a>

@@ -98,6 +98,7 @@ const ParticlesBackground: FC = () => {
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={options}
+            style={{zIndex:"-1"}}
           />
         );
       }

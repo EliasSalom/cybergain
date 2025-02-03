@@ -47,12 +47,12 @@ export default function RootLayout({
       </head>
       <body className={jetBrainsMono.className}>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
           <ResponsiveAppBar />
-          {/*<ParticlesBackground />*/}
+          <CssBaseline />
           <Container className={'main-container'}> {children} </Container>
           <Footer />
         </ThemeProvider>
+        <ParticlesBackground />
       </body>
     </html>
   );

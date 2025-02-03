@@ -1,6 +1,6 @@
 "use client";
 import { TeamCard } from "@/components/Cards/TeamCard";
-import { Box, Grid, Typography } from "@mui/material";
+import {Box, Container, Grid, Typography} from "@mui/material";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { employees, missionData } from "@/utils/data/data";
@@ -29,7 +29,7 @@ const About = () => {
           content="cybersecurity, business protection, digital threats"
         />
       </Head>
-      <Box className={styles.container}>
+      <Container className={styles.container} sx={{zIndex:"1"}}>
         <PageHero
           title="About Us"
           description="We are a leading cyber security company committed to protecting your
@@ -81,7 +81,7 @@ const About = () => {
             ))}
           </Grid>
         </Box>
-      </Box>
+      </Container>
     </>
   );
 };
